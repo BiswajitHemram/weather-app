@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #08ee7b;
+}
+
+/* input of city name  */
+.container{
+    min-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.container form input{
+    width: 400px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 4rem;
+    padding: 10px 55px;
+    font-size: 30px;
+}
+
+form{
+    position: relative;
+}
+
+.fa-location-dot{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    cursor: pointer;
+}
+
+/* weather description */
