@@ -34,17 +34,98 @@ form{
     position: relative;
 }
 
-.fa-location-dot{
+#location-icon{
+    fill: #63E6BE;
     position: absolute;
-    top: 50%;
+    top: 16%;
     left: 4%;
 }
 
-.fa-magnifying-glass{
+#search-icon{
+    fill: #74C0FC;
     position: absolute;
-    top: 50%;
+    top: 16%;
     right: 4%;
+    width: 30px;
     cursor: pointer;
 }
 
-/* weather description */
+form svg{
+    width: 24px;
+    height: 34px;
+}
+
+/* weather result */
+.weather-icon{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon img{
+    width: 150px;
+    height: 150px;
+}
+
+.weather-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px 0;
+}
+
+.current-temp{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.current-temp p:first-child{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.current-temp p{
+    font-size: 1.2rem;
+}
+
+.current-temp p:last-child{
+    font-size: 2rem;
+}
+
+#cityValue:focus  {
+    border: 1px solid rgb(0, 255, 157);
+}
+
+/* weather other feature */
+.weather-other-features{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.humidity, .rain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.weather-other-features svg{
+    width: 30px;
+    height: 30px;
+}
+
+.humidity svg{
+    fill: #00ff9d;
+}
+
+.rain svg{
+    fill: #00ccff;
+}
+
+.weather-other-features p:first-child{
+    text-decoration: underline rgb(215, 14, 241);
+}
