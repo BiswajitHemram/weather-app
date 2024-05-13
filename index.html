@@ -24,23 +24,25 @@
             </svg>
 
             <input type="text" id="cityValue" placeholder="Enter Your Location" title="Enter Your Location">
-
-            <svg xmlns="http://www.w3.org/2000/svg" id="search-icon"
-                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path
-                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-            </svg>
+            <button type="submit" id="submitBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" id="search-icon"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg>
+            </button>
+            
         </form>
         <!-- weather result -->
         <div class="weather-icon">
-            <img src="./images/rain.png" alt="rain">
+            <img src="./images/1.png" class="weather-image">
         </div>
         <div class="weather-description">
             <div class="weather-temp-description">
                 <div class="current-temp">
-                    <p>27<sup style="font-size: 35px;">&#8451;</sup></p>
-                    <p>21<sup>&#8451;</sup> / 34<sup>&#8451;</sup></p>
-                    <p>mostly could</p>
+                    <p><span class="temp">0</span><sup style="font-size: 35px;">&#8451;</sup></p>
+                    <p><span class="min-temp">20</span><sup>&#8451;</sup> / <span class="max-temp">30</span><sup>&#8451;</sup></p>
+                    <p class="summary">mostly could</p>
                 </div>
             </div>
             <div class="weather-other-features">
@@ -52,7 +54,7 @@
                     </svg>
                     <div class="humidity-details">
                         <p>Humidity</p>
-                        <p>78%</p>
+                        <p id="humidity">0%</p>
                     </div>
                 </div>
                 <div class="rain">
@@ -63,12 +65,13 @@
                     </svg>
                     <div class="rain-details">
                         <p>Chance of Rain</p>
-                        <p>78%</p>
+                        <p id="rain">0%</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

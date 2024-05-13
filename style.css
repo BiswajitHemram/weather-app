@@ -18,6 +18,7 @@ body{
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
+    max-width: 440px;
 }
 
 .container form input{
@@ -41,17 +42,29 @@ form{
     left: 4%;
 }
 
-#search-icon{
+button{
     fill: #74C0FC;
     position: absolute;
-    top: 16%;
-    right: 4%;
-    width: 30px;
+    top: 13%;
+    right: 2%;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+button:hover{
+    padding: 2px;
+    border-radius: 10px;
+    /* border: none; */
+    fill: #fff;
+    background-color: #74C0FC;
 }
 
 form svg{
-    width: 24px;
+    width: 34px;
     height: 34px;
 }
 
@@ -86,7 +99,8 @@ form svg{
 }
 
 .current-temp p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .current-temp p:last-child{
