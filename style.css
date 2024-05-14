@@ -124,7 +124,7 @@ form svg{
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 16px;
+    gap: 3px;
 }
 
 .weather-other-features svg{
@@ -142,4 +142,28 @@ form svg{
 
 .weather-other-features p:first-child{
     text-decoration: underline rgb(215, 14, 241);
+}
+
+/* media query */
+@media screen and (max-width: 375px){
+    body{
+        padding: 10px;
+    }
+
+    .container{
+        width: 340px;
+    }
+
+    .container form input{
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .current-temp p:last-child{
+        font-size: 1.2rem;
+    }
+
+    .weather-other-features{
+        justify-content: space-between;
+    }
 }
