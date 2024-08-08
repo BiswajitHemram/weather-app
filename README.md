@@ -1,4 +1,3 @@
-```markdown
 # Weather App
 
 A simple weather application that allows users to get the current weather conditions for a specified location. The app fetches data from the Meteosource API and displays information such as temperature, humidity, and chance of rain.
